@@ -1,0 +1,74 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users-tasks
+      author: Dmitry
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: "Dmitry"
+              - column:
+                  name: email
+                  value: "dmitry@example.com"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: "Alex"
+              - column:
+                  name: email
+                  value: "alex@example.com"
+        - insert:
+            tableName: tasks
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: user_id
+                  value: 1
+              - column:
+                  name: title
+                  value: "Разработать API"
+              - column:
+                  name: status
+                  value: "in_progress"
+        - insert:
+            tableName: tasks
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: user_id
+                  value: 1
+              - column:
+                  name: title
+                  value: "Написать документацию"
+              - column:
+                  name: status
+                  value: "todo"
+        - insert:
+            tableName: tasks
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: user_id
+                  value: 2
+              - column:
+                  name: title
+                  value: "Протестировать API"
+              - column:
+                  name: status
+                  value: "done"

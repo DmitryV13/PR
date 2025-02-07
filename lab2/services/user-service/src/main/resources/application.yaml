@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  liquibase:
+    enabled: true
+  application:
+    name: user-service
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: postgresql
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task2
+    username: admin
+    password: password
+    driver-class-name: org.postgresql.Driver
+

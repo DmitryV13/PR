@@ -1,0 +1,15 @@
+server:
+  port: 8222
+
+spring:
+  application:
+    name: task-service
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: postgresql
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task2
+    username: admin
+    password: password
+    driver-class-name: org.postgresql.Driver

@@ -1,0 +1,11 @@
+services:
+  postgres:
+    container_name: lab2db
+    image: postgres:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: task2
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
