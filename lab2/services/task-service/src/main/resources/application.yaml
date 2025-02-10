@@ -1,6 +1,11 @@
 server:
   port: 8222
 
+management:
+  tracing:
+    sampling:
+      probability: 1.0  # 100% запросов трассируются
+
 spring:
   application:
     name: task-service

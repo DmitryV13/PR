@@ -22,6 +22,7 @@ databaseChangeLog:
                   name: email
                   type: VARCHAR(50)
                   constraints:
+                    unique: true
                     nullable: false
         - createTable:
             tableName: tasks
@@ -42,11 +43,6 @@ databaseChangeLog:
                     references: users(id)
               - column:
                   name: title
-                  type: VARCHAR(50)
-                  constraints:
-                    nullable: false
-              - column:
-                  name: status
                   type: VARCHAR(50)
                   constraints:
                     nullable: false
