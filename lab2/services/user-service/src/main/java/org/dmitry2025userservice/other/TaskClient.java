@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @FeignClient(
         name = "task-service",
-        url = "http://localhost:8222/task-api"
+        url = "http://l2-task-cont:8222/task-api"
 )
 public interface TaskClient {
 
